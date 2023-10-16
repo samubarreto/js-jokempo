@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joquempô</title>
+    <link rel="stylesheet" href="styles/joquempô.css">
+    <link rel="icon" href="src/icon.png">
+
+  </head>
+  <body>
+    <main>
+      <section class="mainContainer">
+        <h1>Joquempô</h1>
+        
+        <div class="buttonsContainer">
+          <button class="chooseButton" onclick="
+          botMove = shuffleBotMove();
+          playGame('PEDRA');
+          "><img src="src/PEDRA.png" class="buttonImg">
+          </button>
+
+          <button class="chooseButton" onclick="
+          botMove = shuffleBotMove();
+          playGame('PAPEL');
+          "><img src="src/PAPEL.png" class="buttonImg">
+          </button>
+
+          <button class="chooseButton" onclick="
+          botMove = shuffleBotMove();
+          playGame('TESOURA');
+          "><img src="src/TESOURA.png" class="buttonImg">
+          </button>
+        </div>
+
+        <h2 class="js-result"></h2>
+        <p class="js-moves movesP"></p>
+        <p class="js-score scoreP"></p>
+
+        <div class="others">
+          <button class="reset-button" onclick="
+          score.wins = 0;
+          score.losses = 0;
+          score.ties = 0;
+
+          localStorage.removeItem('score');
+          updateScoreElement();
+
+          ">
+            Resetar Placar
+          </button>
+
+          <button class="autoplay-button js-autoplay-button" onclick="autoPlay()">Auto Play</button>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/joquempô.js"></script>
+  </body>
+</html>

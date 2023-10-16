@@ -1,0 +1,94 @@
+body {
+  font-family: Roboto, Arial;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 40px;
+  padding: 20px;
+  background: rgba(50, 51, 51, 0.7);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.scoreP {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0px 0px 15px 0px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.chooseButton {
+  background-color: rgb(25, 25, 25);
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.15s;
+  margin: 0px 5px;
+}
+
+.chooseButton:hover {
+  box-shadow: inset 0px 0px 10px #ffc851;
+  background-color: rgb(255, 255, 255);
+}
+
+.chooseButton:active {
+  opacity: 0.8;
+}
+
+.buttonImg {
+  width: 50px;
+}
+
+.autoplay-button,
+.reset-button {
+  font-size: 15px;  
+  font-weight: bold;
+  padding: 10px 75px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 0px 0px 8px 0px;
+}
+
+.autoplay-button:hover,
+.reset-button:hover {
+  opacity: 0.8;
+}
+
+.autoplay-button:active,
+.reset-button:active {
+  opacity: 0.5;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+}
