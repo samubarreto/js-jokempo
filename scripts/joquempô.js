@@ -26,7 +26,7 @@ let intervalId;
 
 function autoPlay() {
   if (!isAutoPlaying) {
-    document.querySelector('.js-autoplay-button').innerHTML = 'Stop Play';
+    document.querySelector('.js-autoplay-button').innerHTML = '🤖 Stop Play';
     intervalId = setInterval(function() {
       const playerMove = shuffleBotMove();
       botMove = shuffleBotMove();
@@ -34,7 +34,7 @@ function autoPlay() {
     }, 1000)
     isAutoPlaying = true;
   } else {
-    document.querySelector('.js-autoplay-button').innerHTML = 'Auto Play';
+    document.querySelector('.js-autoplay-button').innerHTML = '🤖 Auto Play';
     clearInterval(intervalId);
     isAutoPlaying = false
   }
