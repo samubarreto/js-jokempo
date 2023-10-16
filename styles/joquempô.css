@@ -102,3 +102,10 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+
+.js-moves {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
