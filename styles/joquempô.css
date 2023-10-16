@@ -67,7 +67,8 @@ h2 {
 }
 
 .autoplay-button,
-.reset-button {
+.reset-button,
+.github-button {
   font-size: 15px;  
   font-weight: bold;
   padding: 10px 75px;
@@ -79,13 +80,22 @@ h2 {
 }
 
 .autoplay-button:hover,
-.reset-button:hover {
+.reset-button:hover,
+.github-button:hover {
   opacity: 0.8;
 }
 
 .autoplay-button:active,
-.reset-button:active {
+.reset-button:active,
+.github-button:active {
   opacity: 0.5;
+}
+
+.github-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .others {
