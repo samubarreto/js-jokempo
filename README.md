@@ -1,4 +1,4 @@
-# js-jokempo
+# [js-jokempo](https://samubarreto.github.io/js-jokempo/)
 + Versão web do jogo Joquempô, ou Pedra, Papel e Tesoura. Feito em Html, Css e Javascript.
 + Web version of the game Rock, Paper, Scissors. Made with Html, Css, and Javascript.
 
