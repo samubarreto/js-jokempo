@@ -54,7 +54,7 @@ h2 {
 }
 
 .chooseButton:hover {
-  box-shadow: inset 0px 0px 10px #ffc851;
+  box-shadow: inset 100px #ffc851;
   background-color: rgb(255, 255, 255);
 }
 
