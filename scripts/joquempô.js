@@ -9,19 +9,6 @@ const loseDrawSFX = new Audio('src/loseDrawSFX.mp3');
 
 updateScoreElement();
 
-function playAudio(audio) {
-  const audioInstance = new Audio(audio.src);
-  audioInstances.push(audioInstance);
-  audioInstance.play();
-
-  audioInstance.addEventListener('ended', () => {
-    const index = audioInstances.indexOf(audioInstance);
-    if (index > -1) {
-      audioInstances.splice(index, 1);
-    }
-  });
-}
-
 function updateResultElement(result) {
   document.querySelector('.js-result')
   .innerHTML = result;
@@ -56,7 +43,6 @@ function autoPlay() {
   }
 }
 
-const audioInstances = [];
 function playGame(playerMove) {
 
   let result = ''
@@ -89,13 +75,10 @@ function playGame(playerMove) {
 
   if (result === 'Você venceu.') {
     score.wins++;
-    playAudio(winSFX);
   } else if (result === 'Você perdeu.') {
     score.losses++;
-    playAudio(loseDrawSFX);
   } else if (result === 'Empatou.') {
     score.ties++;
-    playAudio(loseDrawSFX);
   }
 
   localStorage.setItem('score', JSON.stringify(score));
