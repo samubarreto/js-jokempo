@@ -5,7 +5,7 @@
   Web version of the game Rock, Paper, Scissors. Made with Html, Css, and Javascript.<br>
   
   # [Preview 👀 (Click Here)](https://samubarreto.github.io/js-jokempo/)
-  ![image](https://github.com/samubarreto/js-jokempo/assets/70921394/39cb1717-289f-4d38-9fc7-afa854561c14)
+  ![image](https://github.com/samubarreto/js-jokempo/assets/70921394/7539dbb4-d887-4c60-84b6-8e9388c9b5fb)
   
   # [Contato](https://linktr.ee/sampereirabrt) 📧
   [![Linktree](https://img.shields.io/badge/linktree-1de9b6?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/sampereirabrt)
