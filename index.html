@@ -18,22 +18,13 @@
         <h1>Joquempô</h1>
         
         <div class="buttonsContainer">
-          <button class="chooseButton" onclick="
-          botMove = shuffleBotMove();
-          playGame('PEDRA');
-          "><img src="src/PEDRA.png" class="buttonImg">
+          <button class="chooseButton js-rock-button"><img src="src/PEDRA.png" class="buttonImg">
           </button>
 
-          <button class="chooseButton" onclick="
-          botMove = shuffleBotMove();
-          playGame('PAPEL');
-          "><img src="src/PAPEL.png" class="buttonImg">
+          <button class="chooseButton js-paper-button"><img src="src/PAPEL.png" class="buttonImg">
           </button>
 
-          <button class="chooseButton" onclick="
-          botMove = shuffleBotMove();
-          playGame('TESOURA');
-          "><img src="src/TESOURA.png" class="buttonImg">
+          <button class="chooseButton js-scissors-button"><img src="src/TESOURA.png" class="buttonImg">
           </button>
         </div>
 
@@ -42,19 +33,11 @@
         <p class="js-score scoreP"></p>
 
         <div class="others">
-          <button class="reset-button" onclick="
-          score.wins = 0;
-          score.losses = 0;
-          score.ties = 0;
-
-          localStorage.removeItem('score');
-          updateScoreElement();
-
-          ">
+          <button class="reset-button js-reset-button">
             🔄 Resetar Placar
           </button>
 
-          <button class="autoplay-button js-autoplay-button" onclick="autoPlay()">🤖 Auto Play</button>
+          <button class="autoplay-button js-autoplay-button">🤖 Auto Play</button>
           <a href="https://github.com/samubarreto" target="_blank">
             <button class="github-button">
               <img src="src/github-mark1.png" style="width: 20px; margin: 0px 5px 0px 0px;">

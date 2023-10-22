@@ -59,6 +59,53 @@ function autoPlay() {
   }
 }
 
+document.querySelector('.js-rock-button')
+  .addEventListener('click', () => {
+    botMove = shuffleBotMove();
+    playGame('PEDRA');
+  })
+
+document.querySelector('.js-paper-button')
+  .addEventListener('click', () => {
+    botMove = shuffleBotMove();
+    playGame('PAPEL');
+  })
+
+document.querySelector('.js-scissors-button')
+  .addEventListener('click', () => {
+    botMove = shuffleBotMove();
+    playGame('TESOURA');
+  })
+
+document.querySelector('.js-reset-button')
+  .addEventListener('click', () => {
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+
+    localStorage.removeItem('score');
+    updateScoreElement();
+  })
+
+document.querySelector('.js-autoplay-button')
+  .addEventListener('click', () => {
+    autoPlay();
+  })
+
+document.body
+  .addEventListener('keydown', (event) => {
+    if (event.key === '1') {
+      botMove = shuffleBotMove();
+      playGame('PEDRA');
+    } else if (event.key === '2') {
+      botMove = shuffleBotMove();
+      playGame('PAPEL');
+    } else if (event.key === '3') {
+      botMove = shuffleBotMove();
+      playGame('TESOURA');
+    }
+  })
+
 function playGame(playerMove) {
 
   let result = ''
