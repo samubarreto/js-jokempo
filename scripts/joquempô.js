@@ -27,10 +27,26 @@ function updateScoreElement() {
 let isAutoPlaying = false;
 let intervalId;
 
+// const autoPlay = () => {
+//   if (!isAutoPlaying) {
+//     document.querySelector('.js-autoplay-button').innerHTML = '🤖 Stop Play';
+//     intervalId = setInterval(() => {
+//       const playerMove = shuffleBotMove();
+//       botMove = shuffleBotMove();
+//       playGame(playerMove);
+//     }, 1000)
+//     isAutoPlaying = true;
+//   } else {
+//     document.querySelector('.js-autoplay-button').innerHTML = '🤖 Auto Play';
+//     clearInterval(intervalId);
+//     isAutoPlaying = false
+//   }
+// }
+
 function autoPlay() {
   if (!isAutoPlaying) {
     document.querySelector('.js-autoplay-button').innerHTML = '🤖 Stop Play';
-    intervalId = setInterval(function() {
+    intervalId = setInterval(() => {
       const playerMove = shuffleBotMove();
       botMove = shuffleBotMove();
       playGame(playerMove);
