@@ -22,11 +22,11 @@
   [youtubeHomepageClone](https://samubarreto.github.io/youtubeHomepageClone/)<br>
   [Oqfz(Todo list)](https://samubarreto.github.io/Oqfz-Todo-list/)<br>
 
-  + [JS-Calculator](https://samubarreto.github.io/js-calculator/)<br>
-  + [JS-Jokempô](https://samubarreto.github.io/js-jokempo/)<br>
+  [JS-Calculator](https://samubarreto.github.io/js-calculator/)<br>
+  [JS-Jokempô](https://samubarreto.github.io/js-jokempo/)<br>
   
   # [Meus vídeos](https://linktr.ee/sampereirabrt) 🎥
-  + [Autikids: Vídeo de Apresentação](https://www.youtube.com/watch?v=gwaOvcCb9-w)<br>
-  + [Autikids: Vídeo Demonstrativo](https://www.youtube.com/watch?v=HsBhddAzQME)<br>
+  [Autikids: Vídeo de Apresentação](https://www.youtube.com/watch?v=gwaOvcCb9-w)<br>
+  [Autikids: Vídeo Demonstrativo](https://www.youtube.com/watch?v=HsBhddAzQME)<br>
 
   </div>
