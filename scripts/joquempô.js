@@ -138,10 +138,13 @@ function playGame(playerMove) {
 
   if (result === 'Você venceu.') {
     score.wins++;
+    playSound('src/winSFX.mp3');
   } else if (result === 'Você perdeu.') {
     score.losses++;
+    playSound('src/loseDrawSFX.mp3');
   } else if (result === 'Empatou.') {
     score.ties++;
+    playSound('src/loseDrawSFX.mp3');
   }
 
   localStorage.setItem('score', JSON.stringify(score));
@@ -164,4 +167,9 @@ function shuffleBotMove() {
     botMove = 'TESOURA';
   }
   return botMove;
+}
+
+function playSound(soundName) {
+  let sound = new Audio(soundName);
+  sound.play();
 }
